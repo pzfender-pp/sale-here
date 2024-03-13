@@ -1,0 +1,66 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/utilities";
+
+.home__container {
+    padding: 50px 10px;
+
+    &__title {
+        font-size: 37px;
+        color: $gray-01;
+        text-align: center;
+        margin-bottom: 30px;
+
+        &.fadeup {
+            animation: fadeUp 0.5s 0.5s ease forwards;
+        }
+    }
+
+    &__input {
+        max-width: 600px;
+        margin: 0 auto 30px;
+
+        &.fadeup {
+            animation: fadeUp 0.5s 0.5s ease forwards;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.fadeup {
+            visibility: visible;
+            animation: fadeUp 0.5s 0.5s ease forwards;
+        }
+
+        &__2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+
+            & button {
+                opacity: 0;
+
+                &:last-child {
+                    animation-delay: 0.7s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home__container {
+        padding: 90px 20px;
+
+        &__button {
+            &__2 {
+                padding-top: 150px;
+            }
+        }
+    }
+}

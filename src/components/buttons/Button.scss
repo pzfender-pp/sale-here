@@ -1,0 +1,38 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/utilities";
+
+.base__button {
+    width: fit-content;
+    height: 60px;
+    padding: 0 30px;
+    font-size: 24px;
+    color: white;
+    background-image: radial-gradient(ellipse farthest-corner at top left, $red-01 0%, $red-02 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &__text {
+        color: $gray-02;
+        background-image: none;
+        background-color: transparent;
+
+        &:hover {
+            color: $red-01;
+        }
+    }
+
+    &.fadeup {
+        animation: fadeUp 0.5s 0.5s ease forwards;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .base__button {
+        padding: 0 50px;
+    }
+}

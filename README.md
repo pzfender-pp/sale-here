@@ -2,6 +2,13 @@
 
 Objective: A web-based, GraphQL-powered chat client
 
+## INSTALLATION
+```
+yarn
+
+yarn start
+```
+
 ## Demo video
 
 See the demo video in `screenshots/`
